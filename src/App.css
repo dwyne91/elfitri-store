@@ -1,0 +1,170 @@
+/* Warna Pink Utama dari Logo Elfitri */
+:root {
+  --pink-elfitri: #FF007F;
+  /* Kita ambil warna pink cetar ini */
+  --text-color: #FFFFFF;
+  /* Warna tulisan putih dari logo */
+}
+
+body {
+  background-color: var(--pink-elfitri);
+  /* SEMUANYA JADI PINK! ✨ */
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  /* Semua tulisan dasar jadi putih */
+}
+
+.container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  /* Judul di tengah biar rapi */
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+  /* Kita tambahkan efek bayangan tipis pada tulisan putih biar gampang dibaca */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub-title {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  /* Putih agak transparan */
+  margin-bottom: 40px;
+}
+
+/* Kotak Input yang Bersinar (Semi-Transparan) */
+.form-box {
+  background: rgba(255, 255, 255, 0.1);
+  /* Putih transparan biar pink-nya tembus */
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  /* Efek kaca buram di HP/Browser modern */
+}
+
+input,
+select {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Sedikit gelap biar inputnya keliatan */
+  color: white;
+  /* Tulisan di dalam input jadi putih */
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  /* Warna placeholder putih samar */
+}
+
+input:focus,
+select:focus {
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Biar tulisan di dalam dropdown tetep keliatan (hitam) */
+select option {
+  color: black;
+}
+
+/* Tombol Putih yang Kontras */
+button {
+  padding: 12px 25px;
+  background-color: white;
+  /* Tombolnya putih biar 'nendang' di atas pink */
+  color: var(--pink-elfitri);
+  /* Tulisan di tombol jadi pink */
+  border: none;
+  border-radius: 10px;
+  font-weight: 800;
+  /* Tulisan tebal */
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  /* Huruf kapital semua biar kayak logo store */
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Tabel Transparan agar Pink Tetap Kelihatan */
+.table-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Header tabel sedikit gelap */
+  color: white;
+  text-align: left;
+  padding: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+td {
+  padding: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  /* Sedikit terang saat disentuh mouse */
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  /* Badge-nya pakai warna oranye agar kontras di atas pink */
+  background-color: #FFA500;
+  color: white;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #ffc107;
+  /* Warna Default (Antre) */
+  color: #000;
+  transition: 0.3s;
+}
+
+/* Jika teks mengandung kata tertentu, warna berubah otomatis (logika sederhana CSS) */
+.status-badge:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
