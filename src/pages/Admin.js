@@ -86,7 +86,7 @@ function Admin({ antrean, ubahStatus }) {
                                     <th style={{ padding: '14px 16px', fontSize: '13px', color: '#e91e63', fontWeight: 'bold' }}>Waktu</th>
                                     <th style={{ padding: '14px 16px', fontSize: '13px', color: '#e91e63', fontWeight: 'bold' }}>Pelanggan</th>
                                     <th style={{ padding: '14px 16px', fontSize: '13px', color: '#e91e63', fontWeight: 'bold' }}>Layanan</th>
-                                    <th style={{ padding: '14px 16px', fontSize: '13px', color: '#e91e63', fontWeight: 'bold', textAlign: 'center' }}>Qty</th>
+                                    <th style={{ padding: '14px 16px', fontSize: '13px', color: '#e91e63', fontWeight: 'bold', textAlign: 'center' }}>Jumlah</th>
                                     <th style={{ padding: '14px 16px', fontSize: '13px', color: '#e91e63', fontWeight: 'bold', textAlign: 'center' }}>Status</th>
                                 </tr>
                             </thead>
@@ -106,8 +106,6 @@ function Admin({ antrean, ubahStatus }) {
                                         const nilaiLayanan = order.Layanan || order["Layanan "] || '-';
                                         const nilaiQty = order.Jumlah || order["Jumlah "] || 0;
                                         const nilaiStatus = order.Status || 'Antre';
-
-                                        // Membaca data dari Kolom H (Catatan)
                                         const nilaiCatatan = order.Catatan || order.catatan || '';
 
                                         return (
