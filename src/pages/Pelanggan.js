@@ -235,11 +235,11 @@ function Pelanggan({
                             </div>
                         </div>
 
-                        {/* KOLOM INPUT DESAIN / CATATAN */}
+                        {/* KOLOM INPUT DESAIN / CATATAN (SUDAH DIPERBARUI UNTUK LINK BUKTI BAYAR) */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <label style={{ fontSize: '13px', fontWeight: '600', color: '#1a1a1a' }}>
-                                    Permintaan Desain / Catatan:
+                                    Permintaan Desain / Catatan & Bukti Bayar:
                                 </label>
                                 <span style={{
                                     fontSize: '11px',
@@ -250,8 +250,8 @@ function Pelanggan({
                                 </span>
                             </div>
                             <textarea
-                                rows="3"
-                                placeholder="Contoh: Cetak warna ukuran A4 kertas glossy. Jika ada file/foto contoh desain, silakan cantumkan link Google Drive / Canva Anda di sini."
+                                rows="4"
+                                placeholder="Contoh catatan: Cetak warna ukuran A4 kertas glossy. &#10;&#10;🔗 Untuk bukti pembayaran atau referensi desain, silakan upload ke Google Drive / Imgur / Canva lalu tempelkan (paste) link-nya di sini."
                                 value={catatanDesain}
                                 onChange={(e) => setCatatanDesain(e.target.value)}
                                 style={{
